@@ -35,15 +35,15 @@ Copy
 Edit
 
 ## 📦 project-root/
-├── transcripts/                 # Raw lecture PDFs
-├── data/                        # Cleaned JSON output
-├── app.py                       # Streamlit app
-├── rag_module.py                # Core RAG logic
-├── utils/
-│   ├── cleaner.py               # Transcript cleaning logic
-│   ├── extractor.py             # PDF text extractor
-│   └── preprocessor.py          # Preprocessing to JSON
-└── requirements.txt             # Required Python packages
+├── transcripts/                 # Raw lecture PDFs<BR>
+├── data/                        # Cleaned JSON output<br>
+├── app.py                       # Streamlit app<br>
+├── rag_module.py                # Core RAG logic<br>
+├── utils/<br>
+│   ├── cleaner.py               # Transcript cleaning logic<br>
+│   ├── extractor.py             # PDF text extractor<br>
+│   └── preprocessor.py          # Preprocessing to JSON<br>
+└── requirements.txt             # Required Python packages<br>
 
 ## ⚙️ Setup Instructions
 Clone the repository
