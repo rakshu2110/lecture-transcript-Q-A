@@ -30,19 +30,19 @@ Streamlit (Web UI)
 
 
 ## 📦 project-root
-📁 Desktop/
-└── 📁 rubixe/
-    ├── transcripts/              # Raw lecture PDFs
-    ├── app.py                    # Streamlit app (can be renamed to starmlit.py if needed)
-    ├── new.py                    # Core RAG logic
-    ├── embeddings/              
-    │   ├── faiss_index.bin       # FAISS index file
-    │   └── passages.json         # JSON with split passages
-    ├── transcript.txt            # Cleaned transcript file
-    ├── requirements.txt          # Required Python packages
-    └── utils/
-        ├── cleaner.py            # Transcript cleaning logic
-        ├── extractor.py          # PDF text extractor
+📁 Desktop/<br>
+└── 📁 rubixe/<br>
+    ├── transcripts/              # Raw lecture PDFs<br>
+    ├── app.py                    # Streamlit app<br>
+    ├── new.py                    # Core RAG logic<br>
+    ├── embeddings/              <br>
+    │   ├── faiss_index.bin       # FAISS index file<br>
+    │   └── passages.json         # JSON with split passages<br>
+    ├── transcript.txt            # Cleaned transcript file<br>
+    ├── requirements.txt          # Required Python packages<br>
+    └── utils/<br>
+        ├── cleaner.py            # Transcript cleaning logic<br>
+        ├── extractor.py          # PDF text extractor<br>
         └── preprocessor.py       # Preprocessing to JSON
 
 
