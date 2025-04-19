@@ -1,5 +1,3 @@
-# repo1
-
 # 📚 Enhanced RAG-based Lecture Transcript Q&A System
 This project is an AI-powered Question & Answer system that helps users extract knowledge from lecture transcripts in PDF format. Using advanced Retrieval-Augmented Generation (RAG) techniques, the system retrieves relevant content from the transcripts and generates accurate answers with proper citations.
 
@@ -29,50 +27,51 @@ T5 (Text-to-Text Transfer Transformer for answer generation)
 
 Streamlit (Web UI)
 
-## 📂 Project Structure
-bash
-Copy
-Edit
 
-## 📦 project-root/
-├── transcripts/                 # Raw lecture PDFs<BR>
-├── data/                        # Cleaned JSON output<br>
-├── app.py                       # Streamlit app<br>
-├── rag_module.py                # Core RAG logic<br>
-├── utils/<br>
-│   ├── cleaner.py               # Transcript cleaning logic<br>
-│   ├── extractor.py             # PDF text extractor<br>
-│   └── preprocessor.py          # Preprocessing to JSON<br>
-└── requirements.txt             # Required Python packages<br>
+
+## 📦 project-root
+📁 Desktop/
+└── 📁 rubixe/
+    ├── transcripts/              # Raw lecture PDFs
+    ├── app.py                    # Streamlit app (can be renamed to starmlit.py if needed)
+    ├── new.py                    # Core RAG logic
+    ├── embeddings/              
+    │   ├── faiss_index.bin       # FAISS index file
+    │   └── passages.json         # JSON with split passages
+    ├── transcript.txt            # Cleaned transcript file
+    ├── requirements.txt          # Required Python packages
+    └── utils/
+        ├── cleaner.py            # Transcript cleaning logic
+        ├── extractor.py          # PDF text extractor
+        └── preprocessor.py       # Preprocessing to JSON
+
+
 
 ## ⚙️ Setup Instructions
-Clone the repository
+
+Open Terminal or PowerShell
+(Make sure you're in the virtual environment.)
+
+Navigate to the project folder:
 
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/rag-transcript-qa.git
-cd rag-transcript-qa
-Install dependencies
+cd %USERPROFILE%\Desktop\rubixe
+Install the required libraries:
 
 bash
 Copy
 Edit
-pip install -r requirements.txt
-Add your lecture PDFs Place them in the transcripts/ folder.
-
-Run preprocessing
-
+pip install streamlit sentence-transformers faiss-cpu torch transformers
+Run the Streamlit App:
 bash
 Copy
 Edit
-python preprocess_all.py
-Launch the web app
+streamlit run streamlit_app.py
+This will open a browser tab with your app. You can now ask questions based on your lecture transcript.
 
-bash
-Copy
-Edit
-streamlit run app.py
+
 
 ## 💡 How It Works
 PDFs are scanned, and raw text is extracted.
